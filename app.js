@@ -14,15 +14,15 @@ for (let i = 0; i < cart_items.length; i++) {
 }
 
 function addToCart() {
-  if (!(selected_items.find(a => a.item_name === this.getElementsByClassName('item_title')[0].innerHTML) == undefined)) {
-    selected_items.splice(
-      selected_items.findIndex(
-        (a) => a.item_name === this.getElementsByClassName('item_title')[0].innerHTML
-      ),
-      1
-    );
-    updateCookies(selected_items);
-  } else {
+  // if (!(selected_items.find(a => a.item_name === this.getElementsByClassName('item_title')[0].innerHTML) == undefined)) {
+  //   selected_items.splice(
+  //     selected_items.findIndex(
+  //       (a) => a.item_name === this.getElementsByClassName('item_title')[0].innerHTML
+  //     ),
+  //     1
+  //   );
+  //   updateCookies(selected_items);
+  // } else {
     this.style.border = 'solid green 2px';
 
     let item_selection = {
@@ -32,7 +32,7 @@ function addToCart() {
     };
     selected_items.push(item_selection);
     updateCookies(selected_items);
-  }
+  // }
 }
 
 function updateCookies(value) {
