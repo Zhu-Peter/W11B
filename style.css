@@ -1,0 +1,28 @@
+nav{
+    margin-bottom: 40px;
+}
+
+nav > a {
+    margin-right: 100px;
+}
+
+#grid_container{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+
+    width: fit-content;
+}
+
+.item{
+    display: grid;
+    background-color: rgb(212, 243, 255);
+    padding: 30px;
+    width: 300px;
+    cursor: pointer;
+}
+
+
+img{
+    width: 200px;
+}

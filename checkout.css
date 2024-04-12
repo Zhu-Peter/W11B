@@ -1,0 +1,13 @@
+nav {
+    margin-bottom: 40px;
+}
+
+nav > a {
+    margin-right: 100px;
+}
+
+#items_container{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+}
