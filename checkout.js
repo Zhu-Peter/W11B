@@ -35,13 +35,20 @@ function refreshPage(){
     container.innerHTML = '';
     for (let i = 0; i<items.length;i++){
         container.insertAdjacentHTML("beforeend", `
-        <div class="item" style="display: grid;
+        <div class="item" style="display: inline-block;
         background-color: rgb(212, 243, 255);
         padding: 30px;
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        vertical-align: top;
+        position: relative;
         max-width: 50vw">
                     <h1 class="item_title">${items[i].item_name}</h1>
                     <p>${items[i].item_description}</p>
-                    <img style="width: 200px;" src="${items[i].item_link}" alt=""><br>
+                    <img style="width: 200px;
+                                margin-bottom: 30px;" 
+                                src="${items[i].item_link}" alt=""><br>
                     <button class="item_button" item_name="${items[i].item_name}">Remove</button>
                 </div>
         `)

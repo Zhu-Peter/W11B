@@ -7,7 +7,7 @@ nav > a {
 }
 
 #items_container{
-    display: grid;
-    grid-auto-flow: column;
-    gap: 20px;
+    /* display: grid;
+    grid-auto-flow: dense;
+    gap: 20px; */
 }
